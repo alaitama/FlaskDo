@@ -14,8 +14,8 @@ PASSWORD = 'albertito'
 # create out little application
 app = Flask(__name__)
 app.config.from_object(__name__)
-
-    # 
+app.config['PROPAGATE_EXCEPTIONS'] = True 
+ 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
 
