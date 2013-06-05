@@ -5,7 +5,7 @@ from flask import Flask, request, session, g, redirect, url_for, \
 from contextlib import closing
 
 #configuration
-DATABASE = '../data/pyblog.db'
+DATABASE = 'data/pyblog.db'
 DEBUG = True
 SECRET_KEY = 'whats development key'
 USERNAME = 'ramsys'
