@@ -5,7 +5,7 @@ from flask import Flask, request, session, g, redirect, url_for, \
 from contextlib import closing
 
 #configuration
-DATABASE = 'pyblog.db'
+DATABASE = os.environ['OPENSHIFT_DATA_DIR'] + '/pyblog.db'
 DEBUG = True
 SECRET_KEY = 'whats development key'
 USERNAME = 'ramsys'
